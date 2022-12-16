@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<info>
+    <basic_info>
+        <name>small game</name>
+        <version>1.0.5</version>
+        <fps>70</fps>
+    </basic_info>
+    <detailed_info>
+        <game>
+            <music>
+                <path>Erupt.wav</path>
+                <volume>0.3</volume>
+            </music>
+            <windows>
+                <size>960, 540</size>
+            </windows>
+            <background>
+                <path>img\群星.png, img\银河.jpeg</path>
+            </background>
+            <earth>
+                <path>img\地球.png</path>
+                <start_pos>480, 500</start_pos>
+                <size>40, 40</size>
+                <rect_size>4, 4</rect_size>
+                <limit>10</limit>
+                <a_in>0.7</a_in>
+                <a_de>1.15</a_de>
+            </earth>
+            <meteorite>
+                <path>img\R-C.png</path>
+                <size>22, 22</size>
+            </meteorite>
+        </game>
+        <ui>
+            <font>
+                <simhei>
+                    <path>font\simhei.ttf</path>
+                    <size>24, 36</size>
+                </simhei>
+                <FCS>
+                    <path>font\方正少儿简体.ttf</path>
+                    <size>36, 12</size>
+                </FCS>
+                <square>
+                    <path>font\Square.ttf</path>
+                    <size>24</size>
+                </square>
+            </font>
+            <text_surface>
+                <pauseText>
+                    <_1>
+                        <text>Game Pause</text>
+                        <f_color>255, 255, 255</f_color>
+                        <bg_color>0, 0, 32</bg_color>
+                        <pos>380, 170</pos>
+                    </_1>
+                    <_2>
+                        <text>Press "Space" to continue</text>
+                        <f_color>255, 216, 216</f_color>
+                        <bg_color>0, 0, 32</bg_color>
+                        <pos>340, 300</pos>
+                    </_2>
+                </pauseText>
+                <remainText>
+                    <text>Remain the Highest Score</text>
+                    <f_color>0, 0, 0</f_color>
+                    <bg_color>216, 216, 216</bg_color>
+                </remainText>
+                <restartText>
+                    <text>Restart</text>
+                    <f_color>0, 0, 0</f_color>
+                    <bg_color>216, 216, 216</bg_color>
+                </restartText>
+                <scoreRecordText>
+                    <f_color>0, 0, 0</f_color>
+                    <bg_color>128, 128, 128</bg_color>
+                </scoreRecordText>
+            </text_surface>
+            <panel>
+                <scorePanel>
+                    <color>255, 255, 255</color>
+                    <is_alpha>0</is_alpha>
+                    <text>Score: {0}</text>
+                    <pos>0, 0</pos>
+                </scorePanel>
+                <fpsPanel>
+                    <color>128, 128, 128, 128</color>
+                    <is_alpha>1</is_alpha>
+                    <text>fps=%.2f</text>
+                    <pos>912, 0</pos>
+                </fpsPanel>
+                <versionPanel>
+                    <color>128, 128, 128, 128</color>
+                    <is_alpha>1</is_alpha>
+                    <text>version: </text>
+                    <pos>0, 528</pos>
+                </versionPanel>
+                <volumePanel>
+                    <color>128, 128, 128</color>
+                    <is_alpha>1</is_alpha>
+                    <text>volume: </text>
+                    <pos>900, 528</pos>
+                </volumePanel>
+                <timePanel>
+                    <color>76, 151, 255</color>
+                    <is_alpha>0</is_alpha>
+                    <text>Time: %.2f</text>
+                    <pos>0, 36</pos>
+                </timePanel>
+            </panel>
+            <backdrop>
+                <pauseBackdrop>
+                    <size>960, 540</size>
+                    <color>0, 0, 0, 156</color>
+                    <pos>0, 0</pos>
+                </pauseBackdrop>
+                <finishBackdrop>
+                    <size>480, 540</size>
+                    <color>0, 0, 0</color>
+                    <pos>240, 0</pos>
+                </finishBackdrop>
+            </backdrop>
+            <button>
+                <RemainHighestScoreButton>
+                    <topleft>340, 500</topleft>
+                    <bgcolor>155, 155, 155</bgcolor>
+                </RemainHighestScoreButton>
+                <RestartButton>
+                    <topleft>400, 452</topleft>
+                    <bgcolor>155, 155, 155</bgcolor>
+                </RestartButton>
+            </button>
+        </ui>
+        <effect/>
+    </detailed_info>
+</info>
